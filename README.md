@@ -1,1 +1,0 @@
-# batuhanrimed.github.io
