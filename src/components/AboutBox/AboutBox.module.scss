@@ -1,0 +1,14 @@
+.aboutBox {
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  > i {
+    font-size: 200%;
+  }
+  > div {
+    > h3 {
+      margin: 0;
+    }
+  }
+}

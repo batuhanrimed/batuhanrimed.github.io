@@ -1,0 +1,137 @@
+.tag {
+  padding: 5px 10px;
+  background-color: #eee;
+  border-radius: 8px;
+  i[class*="pi-instagram"] {
+    color: #ba4099;
+  }
+  i[class*="pi-linkedin"] {
+    color: #1a6ac4;
+  }
+  i[class*="pi-youtube"] {
+    color: #ff1512;
+  }
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 30px 0px #ccc;
+}
+
+.profile {
+  grid-column: span 3 / span 9;
+  > .card {
+    top: 150px;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 120px;
+    > .profileInfo {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 15px;
+      > .photo {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: calc(100% - 100px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 240px;
+          height: 240px;
+          border-radius: 20px;
+        }
+      }
+      > h1 {
+        font-weight: 700;
+      }
+      > .socialLinks {
+        display: flex;
+        gap: 5px;
+        word-wrap: normal;
+      }
+      > .contacts {
+        width: 100%;
+        background-color: #eee;
+        border-radius: 10px;
+        padding: 15px;
+        > .contact {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 15px;
+          padding: 10px 0;
+          border-bottom: 1px solid #ddd;
+          &:last-of-type {
+            border-bottom: none;
+          }
+          > .icon {
+            background-color: #fff;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0px 0px 30px 0px #ccc;
+
+            &.phone {
+              color: #e93b81;
+            }
+
+            &.email {
+              color: #6ab5b9;
+            }
+
+            &.location {
+              color: #fd7590;
+            }
+
+            & + div {
+              width: 100%;
+              > a {
+                display: block;
+                text-decoration: none;
+                color: #555;
+              }
+            }
+          }
+        }
+      }
+    }
+    > .downloadResume {
+      font-family: "Roboto Slab", sans-serif;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      font-size: 125%;
+      width: 100%;
+      background-color: #1a6ac4;
+      color: #fff;
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+      strong {
+        font-weight: 300;
+      }
+      &:hover {
+        transform: scale(1.05);
+      }
+      &:active {
+        transform: scale(1);
+      }
+    }
+  }
+}
