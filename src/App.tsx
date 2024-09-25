@@ -14,7 +14,7 @@ function App() {
       <div className={style.navigation}>
         <div className={style.card}>
           <NavLink
-            to="/hakkimda"
+            to="/"
             className={({ isActive }) => (isActive ? style.active : "")}
             title="Hakkımda"
           >
@@ -23,7 +23,7 @@ function App() {
           <NavLink
             to="/calismalarim"
             className={({ isActive }) => (isActive ? style.active : "")}
-            title="Hakkımda"
+            title="Çalışmalarım"
           >
             <i className="pi pi-briefcase"></i>
           </NavLink>

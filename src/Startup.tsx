@@ -14,7 +14,7 @@ export const Startup = () => {
 
       children: [
         {
-          path: "hakkimda",
+          path: "",
           element: (
             <AnimationLayout>
               <About />
